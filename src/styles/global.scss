@@ -1,7 +1,9 @@
+$dark-colour: #091921;
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #091921;
+  background-color: $dark-colour;
 }
