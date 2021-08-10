@@ -1,0 +1,9 @@
+@mixin clock-arrow-view($w, $h, $bgc, $zi) {
+  content: "";
+  position: absolute;
+  width: $w;
+  height: $h;
+  background: $bgc;
+  z-index: $zi;
+  border-radius: 6px 6px 0 0;
+}
