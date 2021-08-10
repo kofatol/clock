@@ -1,0 +1,16 @@
+@import "../../styles/global.scss";
+
+.Second {
+  @extend %arrow-parent-positioning;
+
+  &__sc {
+    @extend %clock-arrow;
+
+    width: 230px;
+    height: 230px;
+
+    &::before {
+      @include clock-arrow-view(2px, 150px, #fff, 12);
+    }
+  }
+}
