@@ -1,5 +1,5 @@
 import React from "react";
-import ClockChild from "../../interfaces/ClockChild";
+import { ClockChild } from "../../interfaces";
 import "./Minute.scss";
 
 const Minute: React.FC<ClockChild> = ({ turnDegree }) => {
