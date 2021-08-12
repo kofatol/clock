@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const useTime = () => {
   const deg = 6;
@@ -6,12 +6,18 @@ const useTime = () => {
   const [mm, setMm] = useState(0);
   const [ss, setSs] = useState(0);
 
-  setInterval(() => {
-    const day = new Date();
-    setHh(() => day.getHours() * 30);
-    setMm(() => day.getMinutes() * deg);
-    setSs(() => day.getSeconds() * deg);
-  }, 500);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const day = new Date();
+      setHh(() => day.getHours() * 30);
+      setMm(() => day.getMinutes() * deg);
+      setSs(() => day.getSeconds() * deg);
+    }, 500);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [hh, mm, ss]);
 
   return { hh, mm, ss };
 };
