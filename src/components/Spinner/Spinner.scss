@@ -1,0 +1,115 @@
+@import "../../styles/global.scss";
+
+.Spinner {
+  width: 301px;
+  height: 301px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+
+    div {
+      left: 142.975px;
+      top: 88.79499999999999px;
+      position: absolute;
+      animation: Spinner__container linear 0.9900990099009901s infinite;
+      background: $spinner-colour;
+      width: 15.049999999999999px;
+      height: 3.01px;
+      border-radius: 7.5249999999999995px / 1.505px;
+      transform-origin: 7.5249999999999995px 61.705px;
+    }
+
+    div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -0.9075907590759075s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -0.825082508250825s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.7425742574257426s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.6600660066006601s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.5775577557755776s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.495049504950495s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.4125412541254125s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.33003300330033003s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.2475247524752475s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.16501650165016502s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.08250825082508251s;
+      background: $spinner-colour;
+    }
+
+    div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+      background: $spinner-colour;
+    }
+
+    div {
+      box-sizing: content-box;
+    }
+  }
+}
+
+@keyframes Spinner__container {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
