@@ -13,7 +13,7 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ onClick }) => {
     <div
       onClick={onClick}
       className={`ThemeSwitcher
-      ${isLightMode ? "ThemeSwitcher_light" : "ThemeSwitcher_dark"}`}
+      ${isLightMode ? "ThemeSwitcher_dark" : "ThemeSwitcher_light"}`}
     >
       <span className="ThemeSwitcher__text">Dark mode</span>
     </div>
