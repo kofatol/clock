@@ -3,6 +3,12 @@ import Clock from "./components/Clock";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import "./App.scss";
 
+interface AppContextProps {
+  isLightMode: boolean;
+}
+
+export const AppContext = React.createContext<Partial<AppContextProps>>({});
+
 const App: React.FC = () => {
   const [isLightMode, setIsLightMode] = useState(false);
 
@@ -14,8 +20,10 @@ const App: React.FC = () => {
   return (
     // <div className="App App_dark">
     <div className="App App_light">
-      <ThemeSwitcher onClick={onThemeChange} />
-      <Clock />
+      <AppContext.Provider value={{ isLightMode }}>
+        <ThemeSwitcher onClick={onThemeChange} />
+        <Clock />
+      </AppContext.Provider>
     </div>
   );
 };
