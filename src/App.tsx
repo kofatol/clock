@@ -13,8 +13,10 @@ const App: React.FC = () => {
   };
 
   return (
-    // <div className="App App_dark">
-    <div className="App App_light">
+    <div
+      className={`App
+      ${isLightMode ? "App_light" : "App_dark"}`}
+    >
       <AppContext.Provider value={{ isLightMode }}>
         <ThemeSwitcher onClick={onThemeChange} />
         <Clock />
