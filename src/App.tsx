@@ -1,9 +1,13 @@
 import React from "react";
-import "./App.scss";
 import Clock from "./components/Clock";
+import "./App.scss";
 
 const App: React.FC = () => {
-  return <Clock />;
+  return (
+    <div className="App">
+      <Clock />
+    </div>
+  );
 };
 
 export default App;

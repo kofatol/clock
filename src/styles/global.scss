@@ -3,13 +3,10 @@
 @import "./mixins.scss";
 
 $dark-colour: #091921;
+$light-colour: #d1dae3;
 
 $spinner-colour: #1380be;
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: $dark-colour;
+  margin: 0;
 }
