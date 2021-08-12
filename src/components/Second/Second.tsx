@@ -1,8 +1,8 @@
 import React from "react";
-import { ClockChild } from "../../interfaces";
+import { ClockChildProps } from "../../interfaces";
 import "./Second.scss";
 
-const Second: React.FC<ClockChild> = ({ rotationDegree }) => {
+const Second: React.FC<ClockChildProps> = ({ rotationDegree }) => {
   return (
     <div className="Second">
       <div

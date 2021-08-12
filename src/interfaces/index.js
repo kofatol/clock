@@ -1,3 +1,3 @@
-import ClockChild from "./ClockChild";
+import ClockChildProps from "./ClockChildProps";
 
-export { ClockChild };
+export { ClockChildProps };
