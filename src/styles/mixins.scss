@@ -1,4 +1,4 @@
-@mixin clock-arrow-view($w, $h, $bgc, $zi) {
+@mixin clock-hand-view($w, $h, $bgc, $zi) {
   content: "";
   position: absolute;
   width: $w;

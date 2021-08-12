@@ -10,7 +10,7 @@
     height: 160px;
 
     &::before {
-      @include clock-arrow-view(8px, 80px, #ff105e, 10);
+      @include clock-hand-view(8px, 80px, #ff105e, 10);
     }
   }
 }

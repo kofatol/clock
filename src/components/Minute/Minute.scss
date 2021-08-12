@@ -11,13 +11,13 @@
 
     &_dark {
       &::before {
-        @include clock-arrow-view(4px, 90px, #fff, 11);
+        @include clock-hand-view(4px, 90px, #fff, 11);
       }
     }
 
     &_light {
       &::before {
-        @include clock-arrow-view(4px, 90px, #091921, 11);
+        @include clock-hand-view(4px, 90px, #091921, 11);
       }
     }
   }
