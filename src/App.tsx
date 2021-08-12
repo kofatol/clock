@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import Clock from "./components/Clock";
+import { AppContext } from "./App.model";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import "./App.scss";
-
-interface AppContextProps {
-  isLightMode: boolean;
-}
-
-export const AppContext = React.createContext<Partial<AppContextProps>>({});
 
 const App: React.FC = () => {
   const [isLightMode, setIsLightMode] = useState(false);
