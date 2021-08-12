@@ -4,7 +4,7 @@ import "./App.scss";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App App_dark">
       <Clock />
     </div>
   );
