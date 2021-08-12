@@ -4,7 +4,7 @@
   @extend %arrow-parent-positioning;
 
   &__hr {
-    @extend %clock-arrow;
+    @extend %clock-hand;
 
     width: 160px;
     height: 160px;
