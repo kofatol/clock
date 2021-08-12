@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../App";
 import "./ThemeSwitcher.scss";
 
 interface ThemeSwitcherProps {
@@ -6,9 +7,14 @@ interface ThemeSwitcherProps {
 }
 
 const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ onClick }) => {
+  const { isLightMode } = useContext(AppContext);
+
   return (
-    <div className="ThemeSwitcher ThemeSwitcher_dark" onClick={onClick}>
-      {/* <div className="ThemeSwitcher ThemeSwitcher_light"> */}
+    <div
+      onClick={onClick}
+      className={`ThemeSwitcher
+      ${isLightMode ? "ThemeSwitcher_light" : "ThemeSwitcher_dark"}`}
+    >
       <span className="ThemeSwitcher__text">Dark mode</span>
     </div>
   );
