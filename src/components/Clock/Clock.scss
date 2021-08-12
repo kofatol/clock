@@ -28,7 +28,7 @@
       inset 0 15px 15px rgba(0, 0, 0, 0.5);
 
     &::before {
-      background-color: $second-hand-dark-colour;
+      background-color: $white-colour;
     }
   }
 
@@ -41,7 +41,7 @@
       inset 10px 10px 10px rgba(0, 0, 0, 0.1);
 
     &::before {
-      background-color: $second-hand-light-colour;
+      background-color: $blue-colour;
     }
   }
 }
