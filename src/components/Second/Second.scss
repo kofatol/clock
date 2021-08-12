@@ -9,8 +9,16 @@
     width: 230px;
     height: 230px;
 
-    &::before {
-      @include clock-arrow-view(2px, 150px, #fff, 12);
+    &_dark {
+      &::before {
+        @include clock-arrow-view(2px, 150px, $dark-second-hand-colour, 12);
+      }
+    }
+
+    &_light {
+      &::before {
+        @include clock-arrow-view(2px, 150px, $light-second-hand-colour, 12);
+      }
     }
   }
 }
