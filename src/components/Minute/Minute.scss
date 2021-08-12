@@ -1,7 +1,7 @@
 @import "../../styles/global.scss";
 
 .Minute {
-  @extend %arrow-parent-positioning;
+  @extend %clock-hand-parent-positioning;
 
   &__mn {
     @extend %clock-hand;

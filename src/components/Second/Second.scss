@@ -1,7 +1,7 @@
 @import "../../styles/global.scss";
 
 .Second {
-  @extend %arrow-parent-positioning;
+  @extend %clock-hand-parent-positioning;
 
   &__sc {
     @extend %clock-hand;
