@@ -14,7 +14,8 @@ const Clock: React.FC = () => {
       {!hh ? (
         <Spinner />
       ) : (
-        <div className="Clock">
+        // <div className="Clock Clock_dark">
+        <div className="Clock Clock_light">
           <Hour rotationDegree={hh + mm / 12} />
           <Minute rotationDegree={mm} />
           <Second rotationDegree={ss} />
