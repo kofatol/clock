@@ -1,3 +1,3 @@
 export default interface ClockChild {
-  turnDegree: number;
+  rotationDegree: number;
 }

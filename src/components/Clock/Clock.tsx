@@ -10,9 +10,9 @@ const Clock: React.FC = () => {
 
   return (
     <div className="Clock">
-      <Hour turnDegree={hh + mm / 12} />
-      <Minute turnDegree={mm} />
-      <Second turnDegree={ss} />
+      <Hour rotationDegree={hh + mm / 12} />
+      <Minute rotationDegree={mm} />
+      <Second rotationDegree={ss} />
     </div>
   );
 };
