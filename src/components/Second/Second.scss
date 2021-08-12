@@ -9,16 +9,8 @@
     width: 230px;
     height: 230px;
 
-    &_dark {
-      &::before {
-        @include clock-hand-view(2px, 150px, $second-hand-dark-colour, 12);
-      }
-    }
-
-    &_light {
-      &::before {
-        @include clock-hand-view(2px, 150px, $second-hand-light-colour, 12);
-      }
+    &::before {
+      @include clock-hand-view(2px, 150px, $blue-colour, 12);
     }
   }
 }
